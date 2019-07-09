@@ -26,9 +26,9 @@ document.onkeyup = function(event) {
     }
     else {
         if(remainingGuesses > 0){
-            remainingGuesses--;
             if (letters.includes(userChoice) && !guessedLetters.includes(userChoice)){      
             guessedLetters.push(userChoice);
+            remainingGuesses--;
             }
             else{
                 alert("try again!")
